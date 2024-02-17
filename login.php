@@ -38,7 +38,7 @@
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                        <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-<li class="nav-item"> <a class="nav-link active" href="branches.php">Branches<span class="sr-only"></span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="branches.php">Branches<span class="sr-only"></span></a> </li>
                             
 							<?php
 						if(empty($_SESSION["user_id"]))
@@ -152,7 +152,7 @@ if(isset($_POST['submit']))
                                     <h5>Phone: 09159903838  097722101023</a></h5> </div>
                         <div class="col-xs-12 col-sm-5 additional-info color-gray">
                             <h5>Additional Info</h5>
-                           <p>ORDER NOW!!!</p>
+                           <p>RESERVED NOW!!!</p>
                         </div>
                     </div>
                 </div>
