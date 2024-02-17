@@ -60,7 +60,7 @@ session_start();
         <section class="hero bg-image" data-image-src="images/img/indexBG.jpg">
             <div class="hero-inner">
                 <div class="container text-center hero-text font-white">
-                    <h1>Beauty Elevated, Naturally Created.</h1>
+                    <h1>TITE.</h1>
                     
                     <div class="banner-form">
                         <form class="form-inline">
