@@ -25,7 +25,7 @@ session_start();
             <nav class="navbar navbar-dark">
                 <div class="container">
                     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
-                    <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/burgerLogo.png" alt=""> </a>
+                    <a class="navbar-brand" href="index.php"> <img class="img-rounded" src="images/siteLogo.png" alt=""> </a>
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
@@ -60,8 +60,8 @@ session_start();
                     <ul class="row links">
                        
                         <li class="col-xs-12 col-sm-4 link-item active"><span>1</span><a href="#">Choose Hair Styles</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item"><span>2</span><a href="#">Pick Your favorite food</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item"><span>3</span><a href="#">Order and Pay</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>2</span><a href="#">Confirm the service</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>3</span><a href="#">Reserve and Pay</a></li>
                     </ul>
                 </div>
             </div>
