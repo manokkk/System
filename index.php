@@ -185,7 +185,7 @@ session_start();
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="title-block pull-left">
-                            <h4>Featured Branches</h4> </div>
+                            <h4>Featured Hair Styles</h4> </div>
                     </div>
                     <div class="col-sm-8">
                         <div class="restaurants-filter pull-right">
