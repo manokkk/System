@@ -37,7 +37,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 								$extension = strtolower(end($extension));  
 								$fnew = uniqid().'.'.$extension;
    
-								$store = "Res_img/dishes/".basename($fnew);                     
+								$store = "Res_img/products/".basename($fnew);                     
 	
 					if($extension == 'jpg'||$extension == 'png'||$extension == 'gif' )
 					{        
@@ -58,7 +58,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 												
 												
 				                                 
-												$sql = "update dishes set rs_id='$_POST[res_name]',title='$_POST[d_name]',slogan='$_POST[about]',price='$_POST[price]',img='$fnew' where d_id='$_GET[menu_upd]'";
+												$sql = "update products set rs_id='$_POST[res_name]',title='$_POST[d_name]',slogan='$_POST[about]',price='$_POST[price]',img='$fnew' where d_id='$_GET[menu_upd]'";
 												mysqli_query($db, $sql); 
 												move_uploaded_file($temp, $store);
 			  
@@ -159,7 +159,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                 </ul>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
+								<li><a href="all_hairstyle.php">All Hairstyles</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
@@ -203,7 +203,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">
                                     <div class="form-body">
-                                        <?php $qml ="select * from dishes where d_id='$_GET[menu_upd]'";
+                                        <?php $qml ="select * from products where d_id='$_GET[menu_upd]'";
 													$rest=mysqli_query($db, $qml); 
 													$roww=mysqli_fetch_array($rest);
 														?>
@@ -256,7 +256,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                                     <label class="control-label">Select Category</label>
 													<select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
                                                         <option>--Select Hair Styles--</option>
-                                                 <?php $ssql ="select * from branch";
+                                                 <?php $ssql ="select * from hairstyle";
 													$res=mysqli_query($db, $ssql); 
 													while($row=mysqli_fetch_array($res))  
 													{

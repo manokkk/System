@@ -30,7 +30,7 @@ session_start();
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-<li class="nav-item"> <a class="nav-link active" href="branches.php">Branches<span class="sr-only"></span></a> </li>
+<li class="nav-item"> <a class="nav-link active" href="hairstyle.php">Hairstyles<span class="sr-only"></span></a> </li>
                             
                            
 							<?php
@@ -108,17 +108,17 @@ session_start();
                 </div>
                 <div class="row">
 						<?php 					
-						$query_res= mysqli_query($db,"select * from dishes LIMIT 6"); 
+						$query_res= mysqli_query($db,"select * from products LIMIT 6"); 
                                 while($r=mysqli_fetch_array($query_res))
                                 {
                                         
                                     echo '  <div class="col-xs-12 col-sm-6 col-md-4 food-item">
                                             <div class="food-item-wrap">
-                                                <div class="figure-wrap bg-image" data-image-src="admin/Res_img/dishes/'.$r['img'].'"></div>
+                                                <div class="figure-wrap bg-image" data-image-src="admin/Res_img/products/'.$r['img'].'"></div>
                                                 <div class="content">
-                                                    <h5><a href="dishes.php?res_id='.$r['rs_id'].'">'.$r['title'].'</a></h5>
+                                                    <h5><a href="products.php?res_id='.$r['rs_id'].'">'.$r['title'].'</a></h5>
                                                     <div class="product-name">'.$r['slogan'].'</div>
-                                                    <div class="price-btn-block"> <span class="price">₱'.$r['price'].'</span> <a href="dishes.php?res_id='.$r['rs_id'].'" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                                                    <div class="price-btn-block"> <span class="price">₱'.$r['price'].'</span> <a href="products.php?res_id='.$r['rs_id'].'" class="btn theme-btn-dash pull-right">Order Now</a> </div>
                                                 </div>
                                                 
                                             </div>
@@ -212,7 +212,7 @@ session_start();
                         
 						
 						<?php  
-						$ress= mysqli_query($db,"select * from branch");  
+						$ress= mysqli_query($db,"select * from hairstyle");  
 									      while($rows=mysqli_fetch_array($ress))
 										  {
 													
@@ -223,11 +223,11 @@ session_start();
                                                        <div class="restaurant-wrap">
                                                            <div class="row">
                                                                <div class="col-xs-12 col-sm-3 col-md-12 col-lg-3 text-xs-center">
-                                                                   <a class="restaurant-logo" href="dishes.php?res_id='.$rows['rs_id'].'" > <img src="admin/Res_img/'.$rows['image'].'" alt="Restaurant logo"> </a>
+                                                                   <a class="restaurant-logo" href="products.php?res_id='.$rows['rs_id'].'" > <img src="admin/Res_img/'.$rows['image'].'" alt="Restaurant logo"> </a>
                                                                </div>
                                                    
                                                                <div class="col-xs-12 col-sm-9 col-md-12 col-lg-9">
-                                                                   <h5><a href="dishes.php?res_id='.$rows['rs_id'].'" >'.$rows['title'].'</a></h5> <span>'.$rows['address'].'</span>
+                                                                   <h5><a href="products.php?res_id='.$rows['rs_id'].'" >'.$rows['title'].'</a></h5> <span>'.$rows['address'].'</span>
                                                                </div>
                                                    
                                                            </div>

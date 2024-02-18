@@ -58,7 +58,7 @@ if(isset($_POST['submit']))
 												
 												$res_name=$_POST['res_name'];
 				                                 
-												$sql = "update branch set c_id='$_POST[c_name]', title='$res_name',email='$_POST[email]',phone='$_POST[phone]',url='$_POST[url]',o_hr='$_POST[o_hr]',c_hr='$_POST[c_hr]',o_days='$_POST[o_days]',address='$_POST[address]',image='$fnew' where rs_id='$_GET[res_upd]' ";  // store the submited data ino the database :images												mysqli_query($db, $sql); 
+												$sql = "update hairstyle set c_id='$_POST[c_name]', title='$res_name',email='$_POST[email]',phone='$_POST[phone]',url='$_POST[url]',o_hr='$_POST[o_hr]',c_hr='$_POST[c_hr]',o_days='$_POST[o_days]',address='$_POST[address]',image='$fnew' where rs_id='$_GET[res_upd]' ";  // store the submited data ino the database :images												mysqli_query($db, $sql); 
 													mysqli_query($db, $sql); 
 												move_uploaded_file($temp, $store);
 			  
@@ -230,7 +230,7 @@ if(isset($_POST['submit']))
                                 
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
+								<li><a href="all_hairstyle.php">All Hairstyles</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
@@ -277,7 +277,7 @@ if(isset($_POST['submit']))
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">
                                     <div class="form-body">
-                                       <?php $ssql ="select * from branch where rs_id='$_GET[res_upd]'";
+                                       <?php $ssql ="select * from hairstyle where rs_id='$_GET[res_upd]'";
 													$res=mysqli_query($db, $ssql); 
 													$row=mysqli_fetch_array($res);?>
                                         <hr>

@@ -37,7 +37,7 @@ if(isset($_POST['submit']))
 								$extension = strtolower(end($extension));  
 								$fnew = uniqid().'.'.$extension;
    
-								$store = "Res_img/dishes/".basename($fnew);                    
+								$store = "Res_img/products/".basename($fnew);                    
 	
 					if($extension == 'jpg'||$extension == 'png'||$extension == 'gif' )
 					{        
@@ -58,7 +58,7 @@ if(isset($_POST['submit']))
 												
 												
 				                                 
-												$sql = "INSERT INTO dishes(rs_id,title,slogan,price,img) VALUE('".$_POST['res_name']."','".$_POST['d_name']."','".$_POST['about']."','".$_POST['price']."','".$fnew."')";  // store the submited data ino the database :images
+												$sql = "INSERT INTO products(rs_id,title,slogan,price,img) VALUE('".$_POST['res_name']."','".$_POST['d_name']."','".$_POST['about']."','".$_POST['price']."','".$fnew."')";  // store the submited data ino the database :images
 												mysqli_query($db, $sql); 
 												move_uploaded_file($temp, $store);
 			  
@@ -195,7 +195,7 @@ if(isset($_POST['submit']))
                                 </ul>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
+								<li><a href="all_hairstyle.php">All Hairstyles</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
@@ -289,7 +289,7 @@ if(isset($_POST['submit']))
                                                     <label class="control-label">Select Hair Styles</label>
 													<select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
                                                         <option>--Select Hair Styles--</option>
-                                                 <?php $ssql ="select * from branch";
+                                                 <?php $ssql ="select * from hairstyle";
 													$res=mysqli_query($db, $ssql); 
 													while($row=mysqli_fetch_array($res))  
 													{

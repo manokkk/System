@@ -13,7 +13,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>All Hair Styles</title>
+    <title>All Hairstyles</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -96,7 +96,7 @@ session_start();
                                 </ul>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
+								<li><a href="all_hairstyle.php">All Hairstyles</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
@@ -135,7 +135,7 @@ session_start();
                     <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">All Hair Styles</h4>
+                                <h4 class="m-b-0 text-white">All Hairstyles</h4>
                             </div>
 								
                                 <div class="table-responsive m-t-40">
@@ -154,12 +154,12 @@ session_start();
 										
                                            
                                                	<?php
-												$sql="SELECT * FROM branch order by rs_id desc";
+												$sql="SELECT * FROM hairstyle order by rs_id desc";
 												$query=mysqli_query($db,$sql);
 												
 													if(!mysqli_num_rows($query) > 0 )
 														{
-															echo '<td colspan="11"><center>No Branches</center></td>';
+															echo '<td colspan="11"><center>No Hairstyles</center></td>';
 														}
 													else
 														{				

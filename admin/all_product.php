@@ -95,7 +95,7 @@ session_start();
                                 </ul>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
+								<li><a href="all_hairstyle.php">All Hairstyles</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
@@ -155,7 +155,7 @@ session_start();
 										
                                            
                                                	<?php
-												$sql="SELECT * FROM dishes order by d_id desc";
+												$sql="SELECT * FROM products order by d_id desc";
 												$query=mysqli_query($db,$sql);
 												
 													if(!mysqli_num_rows($query) > 0 )
@@ -166,7 +166,7 @@ session_start();
 														{				
 																	while($rows=mysqli_fetch_array($query))
 																		{
-																				$mql="select * from branch where rs_id='".$rows['rs_id']."'";
+																				$mql="select * from hairstyle where rs_id='".$rows['rs_id']."'";
 																				$newquery=mysqli_query($db,$mql);
 																				$fetch=mysqli_fetch_array($newquery);
 																				
@@ -179,7 +179,7 @@ session_start();
 																								
 																								
 																								<td><div class="col-md-3 col-lg-8 m-b-10">
-																								<center><img src="Res_img/dishes/'.$rows['img'].'" class="img-responsive  radius" style="max-height:100px;max-width:150px;" /></center>
+																								<center><img src="Res_img/products/'.$rows['img'].'" class="img-responsive  radius" style="max-height:100px;max-width:150px;" /></center>
 																								</div></td>
 																								
 																							

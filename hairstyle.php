@@ -29,7 +29,7 @@ session_start();
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                         <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="branches.php">Branches<span class="sr-only"></span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="hairstyle.php">Hairstyles<span class="sr-only"></span></a> </li>
                             
 							<?php
 						if(empty($_SESSION["user_id"]))
@@ -82,18 +82,18 @@ session_start();
                         <div class="col-xs-12 col-sm-7 col-md-7 col-lg-9">
                             <div class="bg-gray restaurant-entry">
                                 <div class="row">
-								<?php $ress= mysqli_query($db,"select * from branch");
+								<?php $ress= mysqli_query($db,"select * from hairstyle");
 									      while($rows=mysqli_fetch_array($ress))
 										  {
 													
 						
 													 echo' <div class="col-sm-12 col-md-12 col-lg-8 text-xs-center text-sm-left">
 															<div class="entry-logo">
-																<a class="img-fluid" href="dishes.php?res_id='.$rows['rs_id'].'" > <img src="admin/Res_img/'.$rows['image'].'" alt="Food logo"></a>
+																<a class="img-fluid" href="products.php?res_id='.$rows['rs_id'].'" > <img src="admin/Res_img/'.$rows['image'].'" alt="Food logo"></a>
 															</div>
 															<!-- end:Logo -->
 															<div class="entry-dscr">
-																<h5><a href="dishes.php?res_id='.$rows['rs_id'].'" >'.$rows['title'].'</a></h5> <span>'.$rows['address'].'</span>
+																<h5><a href="products.php?res_id='.$rows['rs_id'].'" >'.$rows['title'].'</a></h5> <span>'.$rows['address'].'</span>
 																
 															</div>
 															<!-- end:Entry description -->
@@ -103,7 +103,7 @@ session_start();
 																<div class="right-content bg-white">
 																	<div class="right-review">
 																		
-																		<a href="dishes.php?res_id='.$rows['rs_id'].'" class="btn btn-purple">View Menu</a> </div>
+																		<a href="products.php?res_id='.$rows['rs_id'].'" class="btn btn-purple">View Menu</a> </div>
 																</div>
 																<!-- end:right info -->
 															</div>';

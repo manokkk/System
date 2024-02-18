@@ -58,13 +58,13 @@ if(isset($_POST['submit']))
 												
 												$res_name=$_POST['res_name'];
 				                                 
-												$sql = "INSERT INTO branch(c_id,title,address,image) VALUE('".$_POST['c_name']."','".$res_name."','".$_POST['address']."','".$fnew."')";  // store the submited data ino the database :images
+												$sql = "INSERT INTO hairstyle(c_id,title,address,image) VALUE('".$_POST['c_name']."','".$res_name."','".$_POST['address']."','".$fnew."')";  // store the submited data ino the database :images
 												mysqli_query($db, $sql); 
 												move_uploaded_file($temp, $store);
 			  
 													$success = 	'<div class="alert alert-success alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																 New Hair StylesAdded Successfully.
+																 New Hair Style Added Successfully.
 															</div>';
                 
 	
@@ -197,7 +197,7 @@ if(isset($_POST['submit']))
                                 </ul>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
+								<li><a href="all_hairstyle.php">All Hairstyles</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
@@ -252,6 +252,16 @@ if(isset($_POST['submit']))
                                             </div>
                                   
                                           
+		
+							
+											
+											<div class="col-md-6">
+                                                <div class="form-group has-danger">
+                                                    <label class="control-label">Image</label>
+                                                    <input type="file" name="file"  id="lastName" class="form-control form-control-danger" placeholder="12n">
+                                                    </div>
+                                            </div>
+
                                      
                                         </div>
                                    
@@ -261,15 +271,7 @@ if(isset($_POST['submit']))
                                           
                                         
                                            
-											
-							
-											
-											<div class="col-md-6">
-                                                <div class="form-group has-danger">
-                                                    <label class="control-label">Image</label>
-                                                    <input type="file" name="file"  id="lastName" class="form-control form-control-danger" placeholder="12n">
-                                                    </div>
-                                            </div>
+									
                                  
 											
 											

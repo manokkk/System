@@ -82,8 +82,8 @@ else
                         
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
-                                <li><a href="add_restaurant.php">Add Hairstyle</a></li>
+								<li><a href="all_hairstyle.php">All Hairstyles</a></li>
+                                <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
                         </li>
@@ -123,12 +123,12 @@ else
                                     <span><i class="fa fa-home f-s-40 "></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2><?php $sql="select * from branch";
+                                    <h2><?php $sql="select * from hairstyle";
 												$result=mysqli_query($db,$sql); 
 													$rws=mysqli_num_rows($result);
 													
 													echo $rws;?></h2>
-                                    <p class="m-b-0">Branches</p>
+                                    <p class="m-b-0">Hairstyles</p>
                                 </div>
                             </div>
                         </div>
@@ -141,12 +141,12 @@ else
                                     <span><i class="fa fa-cutlery f-s-40" aria-hidden="true"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                    <h2><?php $sql="select * from dishes";
+                                    <h2><?php $sql="select * from products";
 												$result=mysqli_query($db,$sql); 
 													$rws=mysqli_num_rows($result);
 													
 													echo $rws;?></h2>
-                                    <p class="m-b-0">Dishes</p>
+                                    <p class="m-b-0">Products</p>
                                 </div>
                             </div>
                         </div>

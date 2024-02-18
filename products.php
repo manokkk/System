@@ -34,7 +34,7 @@ include_once 'product-action.php';
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                        <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="branches.php">Category<span class="sr-only"></span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="hairstyle.php">Category<span class="sr-only"></span></a> </li>
                             
 							<?php
 						if(empty($_SESSION["user_id"]))
@@ -64,14 +64,14 @@ include_once 'product-action.php';
 
                     <ul class="row links">
                       
-                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="branches.php">Choose Hair Styles</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item active"><span>2</span><a href="dishes.php?res_id=<?php echo $_GET['res_id']; ?>">Pick Your favorite food</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="hairstyle.php">Choose Hair Styles</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item active"><span>2</span><a href="products.php?res_id=<?php echo $_GET['res_id']; ?>">Pick Your favorite food</a></li>
                         <li class="col-xs-12 col-sm-4 link-item"><span>3</span><a href="#">Order and Pay</a></li>
                         
                     </ul>
                 </div>
             </div>
-			<?php $ress= mysqli_query($db,"select * from branch where rs_id='$_GET[res_id]'");
+			<?php $ress= mysqli_query($db,"select * from hairstyle where rs_id='$_GET[res_id]'");
 									     $rows=mysqli_fetch_array($ress);
 										  
 										  ?>
@@ -128,7 +128,7 @@ foreach ($_SESSION["cart_item"] as $item)
 ?>									
 									
                                         <div class="title-row">
-										<?php echo $item["title"]; ?><a href="dishes.php?res_id=<?php echo $_GET['res_id']; ?>&action=remove&id=<?php echo $item["d_id"]; ?>" >
+										<?php echo $item["title"]; ?><a href="products.php?res_id=<?php echo $_GET['res_id']; ?>&action=remove&id=<?php echo $item["d_id"]; ?>" >
 										<i class="fa fa-trash pull-right"></i></a>
 										</div>
 										
@@ -199,7 +199,7 @@ $item_total += ($item["price"]*$item["quantity"]);
                             </div>
                             <div class="collapse in" id="popular2">
 						<?php  
-									$stmt = $db->prepare("select * from dishes where rs_id='$_GET[res_id]'");
+									$stmt = $db->prepare("select * from products where rs_id='$_GET[res_id]'");
 									$stmt->execute();
 									$products = $stmt->get_result();
 									if (!empty($products)) 
@@ -213,9 +213,9 @@ $item_total += ($item["price"]*$item["quantity"]);
                                 <div class="food-item">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-lg-8">
-										<form method="post" action='dishes.php?res_id=<?php echo $_GET['res_id'];?>&action=add&id=<?php echo $product['d_id']; ?>'>
+										<form method="post" action='products.php?res_id=<?php echo $_GET['res_id'];?>&action=add&id=<?php echo $product['d_id']; ?>'>
                                             <div class="rest-logo pull-left">
-                                                <a class="branch-logo pull-left" href="#"><?php echo '<img src="admin/Res_img/dishes/'.$product['img'].'" alt="Food logo">'; ?></a>
+                                                <a class="hairstyle-logo pull-left" href="#"><?php echo '<img src="admin/Res_img/products/'.$product['img'].'" alt="Food logo">'; ?></a>
                                             </div>
                                 
                                             <div class="rest-descr">
@@ -299,7 +299,7 @@ $item_total += ($item["price"]*$item["quantity"]);
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-lg-6">
                                 <div class="item-img pull-left">
-                                    <a class="branch-logo pull-left" href="#"><img src="http://placehold.it/70x70" alt="Food logo"></a>
+                                    <a class="hairstyle-logo pull-left" href="#"><img src="http://placehold.it/70x70" alt="Food logo"></a>
                                 </div>
               
                                 <div class="rest-descr">
@@ -329,7 +329,7 @@ $item_total += ($item["price"]*$item["quantity"]);
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-lg-6">
                                 <div class="item-img pull-left">
-                                    <a class="branch-logo pull-left" href="#"><img src="http://placehold.it/70x70" alt="Food logo"></a>
+                                    <a class="hairstyle-logo pull-left" href="#"><img src="http://placehold.it/70x70" alt="Food logo"></a>
                                 </div>
                     
                                 <div class="rest-descr">
@@ -359,7 +359,7 @@ $item_total += ($item["price"]*$item["quantity"]);
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-lg-6">
                                 <div class="item-img pull-left">
-                                    <a class="branch-logo pull-left" href="#"><img src="http://placehold.it/70x70" alt="Food logo"></a>
+                                    <a class="hairstyle-logo pull-left" href="#"><img src="http://placehold.it/70x70" alt="Food logo"></a>
                                 </div>
                        
                                 <div class="rest-descr">
@@ -389,7 +389,7 @@ $item_total += ($item["price"]*$item["quantity"]);
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 col-lg-6">
                                 <div class="item-img pull-left">
-                                    <a class="branch-logo pull-left" href="#"><img src="http://placehold.it/70x70" alt="Food logo"></a>
+                                    <a class="hairstyle-logo pull-left" href="#"><img src="http://placehold.it/70x70" alt="Food logo"></a>
                                 </div>
                  
                                 <div class="rest-descr">
