@@ -143,8 +143,7 @@ session_start();
                                     <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead class="thead-dark">
                                             <tr>
-											 <th>Hair Styles</th>
-                                                <th>Dish</th>
+                                                <th>Product</th>
                                                 <th>Description</th>
                                                 <th>Price</th>
                                                 <th>Image</th>
@@ -166,13 +165,9 @@ session_start();
 														{				
 																	while($rows=mysqli_fetch_array($query))
 																		{
-																				$mql="select * from hairstyle where rs_id='".$rows['rs_id']."'";
-																				$newquery=mysqli_query($db,$mql);
-																				$fetch=mysqli_fetch_array($newquery);
 																				
 																				
-																					echo '<tr><td>'.$fetch['title'].'</td>
-																					
+																					echo '<tr>
 																								<td>'.$rows['title'].'</td>
 																								<td>'.$rows['slogan'].'</td>
 																								<td>₱'.$rows['price'].'</td>

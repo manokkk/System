@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
 		  
 		
 		
-		if(empty($_POST['d_name'])||empty($_POST['about'])||$_POST['price']==''||$_POST['res_name']=='')
+		if(empty($_POST['d_name'])||empty($_POST['about'])||$_POST['price']=='')
 		{	
 											$error = 	'<div class="alert alert-danger alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -64,7 +64,7 @@ if(isset($_POST['submit']))
 			  
 													$success = 	'<div class="alert alert-success alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																 New Dish Added Successfully.
+																 New Product Added Successfully.
 															</div>';
                 
 	
