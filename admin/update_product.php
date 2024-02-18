@@ -166,7 +166,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                         </li>
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Products</a></li>
+								<li><a href="all_product.php">All Products</a></li>
 								<li><a href="add_product.php">Add Product</a></li>
                               
                                 
@@ -276,7 +276,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                     </div>
                                     <div class="form-actions">
                                         <input type="submit" name="submit" class="btn btn-primary" value="Save"> 
-                                        <a href="all_menu.php" class="btn btn-inverse">Cancel</a>
+                                        <a href="all_product.php" class="btn btn-inverse">Cancel</a>
                                     </div>
                                 </form>
                             </div>
