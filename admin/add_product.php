@@ -244,7 +244,7 @@ if(isset($_POST['submit']))
                                         <div class="row p-t-20">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Dish Name</label>
+                                                    <label class="control-label">Product Name</label>
                                                     <input type="text" name="d_name" class="form-control" >
                                                    </div>
                                             </div>
@@ -284,22 +284,7 @@ if(isset($_POST['submit']))
 											
 											
 											
-											 <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">Select Hair Styles</label>
-													<select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
-                                                        <option>--Select Hair Styles--</option>
-                                                 <?php $ssql ="select * from hairstyle";
-													$res=mysqli_query($db, $ssql); 
-													while($row=mysqli_fetch_array($res))  
-													{
-                                                       echo' <option value="'.$row['rs_id'].'">'.$row['title'].'</option>';;
-													}  
-                                                 
-													?> 
-													 </select>
-                                                </div>
-                                            </div>
+											
 											
 											
 											
