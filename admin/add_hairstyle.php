@@ -198,7 +198,7 @@ if(isset($_POST['submit']))
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
 								<li><a href="all_branch.php">All Hair Styles</a></li>
-                                <li><a href="add_branch.php">Add Hairstyle</a></li>
+                                <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
                         </li>
@@ -311,7 +311,7 @@ if(isset($_POST['submit']))
                                     </div>
                                     <div class="form-actions">
                                         <input type="submit" name="submit" class="btn btn-primary" value="Save"> 
-                                        <a href="add_branch.php" class="btn btn-inverse">Cancel</a>
+                                        <a href="add_hairstyle.php" class="btn btn-inverse">Cancel</a>
                                     </div>
                                 </form>
                             </div>
