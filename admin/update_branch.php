@@ -113,7 +113,7 @@ if(isset($_POST['submit']))
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Update Branch</title>
+    <title>Update Hair Styles</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -228,17 +228,17 @@ if(isset($_POST['submit']))
 								<li><a href="add_admin.php">Add Admin</a></li>
                                 </ul>
                                 
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Branch</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
 								<li><a href="all_branch.php">All Hair Styles</a></li>
-                                <li><a href="add_branch.php">Add Hair Styles</a></li>
+                                <li><a href="add_branch.php">Add Hairstyle</a></li>
                                 
                             </ul>
                         </li>
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">All Products</a></li>
+								<li><a href="add_menu.php">Add Product</a></li>
                               
                                 
                             </ul>
@@ -272,7 +272,7 @@ if(isset($_POST['submit']))
 					    <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             
-                                <h4 class="m-b-0 ">Update Branch</h4>
+                                <h4 class="m-b-0 ">Update Hair Styles</h4>
                             
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">
@@ -284,7 +284,7 @@ if(isset($_POST['submit']))
                                         <div class="row p-t-20">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label class="control-label">Branch Name</label>
+                                                    <label class="control-label">Hairstyle Name</label>
                                                     <input type="text" name="res_name" value="<?php echo $row['title'];  ?>" class="form-control" placeholder="John doe">
                                                    </div>
                                             </div>
@@ -392,7 +392,7 @@ if(isset($_POST['submit']))
 											
                                         </div>
                                        
-                                        <h3 class="box-title m-t-40">Branch Address</h3>
+                                        <h3 class="box-title m-t-40">Description</h3>
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-12 ">

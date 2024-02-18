@@ -218,18 +218,18 @@ if(isset($_POST['submit']))
 								<li><a href="add_admin.php">Add Admin</a></li>
                                 </ul>
                         
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Branch</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
 								<li><a href="all_restaurant.php">All Hair Styles</a></li>
 								<li><a href="add_category.php">Add Category</a></li>
-                                <li><a href="add_restaurant.php">Add Hair Styles</a></li>
+                                <li><a href="add_restaurant.php">Add Hairstyle</a></li>
                                 
                             </ul>
                         </li>
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">All Products</a></li>
+								<li><a href="add_menu.php">Add Product</a></li>
                               
                                 
                             </ul>

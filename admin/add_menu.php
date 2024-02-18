@@ -113,7 +113,7 @@ if(isset($_POST['submit']))
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Add Menu</title>
+    <title>Add Product</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -193,17 +193,17 @@ if(isset($_POST['submit']))
 								<li><a href="all_admin.php">All Admin</a></li>
 								<li><a href="add_admin.php">Add Admin</a></li>
                                 </ul>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Branch</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
 								<li><a href="all_branch.php">All Hair Styles</a></li>
-                                <li><a href="add_branch.php">Add Hair Styles</a></li>
+                                <li><a href="add_branch.php">Add Hairstyle</a></li>
                                 
                             </ul>
                         </li>
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">All Products</a></li>
+								<li><a href="add_menu.php">Add Product</a></li>
                               
                                 
                             </ul>
@@ -234,7 +234,7 @@ if(isset($_POST['submit']))
                                     <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">Add Menu</h4>
+                                <h4 class="m-b-0 text-white">Add Product</h4>
                             </div>
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">
@@ -286,9 +286,9 @@ if(isset($_POST['submit']))
 											
 											 <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label class="control-label">Select Branch</label>
+                                                    <label class="control-label">Select Hair Styles</label>
 													<select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
-                                                        <option>--Select Branch--</option>
+                                                        <option>--Select Hair Styles--</option>
                                                  <?php $ssql ="select * from branch";
 													$res=mysqli_query($db, $ssql); 
 													while($row=mysqli_fetch_array($res))  
