@@ -82,8 +82,8 @@ else
                         
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Branch</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_branch.php">All Branch</a></li>
-                                <li><a href="add_restaurant.php">Add Branch</a></li>
+								<li><a href="all_branch.php">All Hair Styles</a></li>
+                                <li><a href="add_restaurant.php">Add Hair Styles</a></li>
                                 
                             </ul>
                         </li>

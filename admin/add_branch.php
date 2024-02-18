@@ -113,7 +113,7 @@ if(isset($_POST['submit']))
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Add Branch</title>
+    <title>Add Hair Styles</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -197,8 +197,8 @@ if(isset($_POST['submit']))
                                 </ul>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Branch</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_branch.php">All Branch</a></li>
-                                <li><a href="add_branch.php">Add Branch</a></li>
+								<li><a href="all_branch.php">All Hair Styles</a></li>
+                                <li><a href="add_branch.php">Add Hair Styles</a></li>
                                 
                             </ul>
                         </li>
@@ -236,7 +236,7 @@ if(isset($_POST['submit']))
                                     <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">Add Branch</h4>
+                                <h4 class="m-b-0 text-white">Add Hair Styles</h4>
                             </div>
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">
