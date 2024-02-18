@@ -51,7 +51,7 @@ if(isset($_POST['submit']))
   
 <div class="container">
   <div class="info">
-    <h1>BurgerByte</h1>
+    <h1>Snip N' Snap</h1>
     <h2>Admin Panel</h2>
   </div>
 </div>

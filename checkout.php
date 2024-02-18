@@ -99,7 +99,7 @@ else{
                 <div class="container">
                     <ul class="row links">
                       
-                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="branches.php">Choose Branch</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="branches.php">Choose Hair Styles</a></li>
                         <li class="col-xs-12 col-sm-4 link-item "><span>2</span><a href="#">Pick Your favorite food</a></li>
                         <li class="col-xs-12 col-sm-4 link-item active" ><span>3</span><a href="checkout.php">Order and Pay</a></li>
                     </ul>

@@ -64,7 +64,7 @@ include_once 'product-action.php';
 
                     <ul class="row links">
                       
-                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="branches.php">Choose Branch</a></li>
+                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="branches.php">Choose Hair Styles</a></li>
                         <li class="col-xs-12 col-sm-4 link-item active"><span>2</span><a href="dishes.php?res_id=<?php echo $_GET['res_id']; ?>">Pick Your favorite food</a></li>
                         <li class="col-xs-12 col-sm-4 link-item"><span>3</span><a href="#">Order and Pay</a></li>
                         
@@ -81,7 +81,7 @@ include_once 'product-action.php';
                         <div class="row">
                             <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 profile-img">
                                 <div class="image-wrap">
-                                    <figure><?php echo '<img src="admin/Res_img/'.$rows['image'].'" alt="Branch logo">'; ?></figure>
+                                    <figure><?php echo '<img src="admin/Res_img/'.$rows['image'].'" alt="Hair Styleslogo">'; ?></figure>
                                 </div>
                             </div>
 							

@@ -13,7 +13,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>All Branches</title>
+    <title>All Hair Styles</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -94,17 +94,17 @@ session_start();
 								<li><a href="all_admin.php">All Admin</a></li>
 								<li><a href="add_admin.php">Add Admin</a></li>
                                 </ul>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Branch</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_branch.php">All Branch</a></li>
-                                <li><a href="add_branch.php">Add Branch</a></li>
+								<li><a href="all_branch.php">All Hair Styles</a></li>
+                                <li><a href="add_branch.php">Add Hairstyle</a></li>
                                 
                             </ul>
                         </li>
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">All Products</a></li>
+								<li><a href="add_menu.php">Add Product</a></li>
                               
                                 
                             </ul>
@@ -135,7 +135,7 @@ session_start();
                     <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">All Branch</h4>
+                                <h4 class="m-b-0 text-white">All Hair Styles</h4>
                             </div>
 								
                                 <div class="table-responsive m-t-40">
@@ -144,15 +144,8 @@ session_start();
                                             <tr>
 											 <th>Category</th>
                                                 <th>Name</th>
-                                                <th>Email</th>
-                                                <th>Phone</th>
-                                                <th>Url</th>
-                                                <th>Open Hrs</th>
-                                                <th>Close Hrs</th>
-												<th>Open Days</th>
-												  <th>Address</th>
+												  <th>Description</th>
 												  <th>Image</th>
-												  <th>Date</th>
 												   <th>Action</th>  
                                             </tr>
                                         </thead>
@@ -179,14 +172,7 @@ session_start();
 																				
 																					echo ' <tr><td>'.$row['c_name'].'</td>
 																								<td>'.$rows['title'].'</td>
-																								<td>'.$rows['email'].'</td>
-																								<td>'.$rows['phone'].'</td>
-																								<td>'.$rows['url'].'</td>
 																								
-																								
-																								<td>'.$rows['o_hr'].'</td>
-																								<td>'.$rows['c_hr'].'</td>
-																								<td>'.$rows['o_days'].'</td>
 																								
 																								<td>'.$rows['address'].'</td>
 																								
@@ -194,7 +180,6 @@ session_start();
 																								<center><img src="Res_img/'.$rows['image'].'" class="img-responsive radius"  style="min-width:150px;min-height:100px;"/></center>
 																								</div></td>
 																								
-																								<td>'.$rows['date'].'</td>
 																									 <td><a href="delete_branch.php?res_del='.$rows['rs_id'].'" class="btn btn-danger btn-flat btn-addon btn-xs m-b-10"><i class="fa fa-trash-o" style="font-size:16px"></i></a> 
 																									 <a href="update_branch.php?res_upd='.$rows['rs_id'].'" class="btn btn-info btn-flat btn-addon btn-sm m-b-10 m-l-5"><i class="fa fa-edit"></i></a>
 																									</td></tr>';
@@ -243,7 +228,7 @@ session_start();
             
             </div>
          
-            <footer class="footer"> © 2023 - BurgerByte </footer>
+            <footer class="footer"> © 2023 - Snip N' Snap </footer>
      
         </div>
 

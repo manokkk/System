@@ -103,8 +103,8 @@ session_start();
         <section class="popular">
             <div class="container">
                 <div class="title text-xs-center m-b-30">
-                    <h2>Popular Dishes of the Month</h2>
-                    <p class="lead">Easiest way to order your favourite food among these top 6 dishes</p>
+                    <h2>Popular Hair Styles of the Month</h2>
+                    <p class="lead">Easiest way to choose hair styles according to your personal taste.</p>
                 </div>
                 <div class="row">
 						<?php 					
@@ -158,7 +158,7 @@ session_start();
                                     </svg>
                                 </div>
                                 <h3>Choose a dish</h3>
-                                <p>We"ve got your covered with a variety of dishes.</p>
+                                <p>We"ve got your covered with a variety of hair products.</p>
                             </div>
                         </div>
                         <div class="col-xs-15 col-sm-13 col-md-4 how-it-works-steps white-txt col3">
@@ -185,7 +185,7 @@ session_start();
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="title-block pull-left">
-                            <h4>Featured Branches</h4> </div>
+                            <h4>Featured Hair Styles</h4> </div>
                     </div>
                     <div class="col-sm-8">
                         <div class="restaurants-filter pull-right">

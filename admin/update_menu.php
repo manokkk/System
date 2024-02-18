@@ -157,17 +157,17 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 								<li><a href="all_admin.php">All Admin</a></li>
 								<li><a href="add_admin.php">Add Admin</a></li>
                                 </ul>
-                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Branch</span></a>
+                        <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_branch.php">All Branches</a></li>
-                                <li><a href="add_branch.php">Add Branch</a></li>
+								<li><a href="all_branch.php">All Hair Styles</a></li>
+                                <li><a href="add_branch.php">Add Hairstyle</a></li>
                                 
                             </ul>
                         </li>
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_menu.php">All Menues</a></li>
-								<li><a href="add_menu.php">Add Menu</a></li>
+								<li><a href="all_menu.php">All Products</a></li>
+								<li><a href="add_menu.php">Add Product</a></li>
                               
                                 
                             </ul>
@@ -198,7 +198,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 					    <div class="col-lg-12">
                         <div class="card card-outline-primary">
                             <div class="card-header">
-                                <h4 class="m-b-0 text-white">Add Menu to Branch</h4>
+                                <h4 class="m-b-0 text-white">Add Product to Hair Styles</h4>
                             </div>
                             <div class="card-body">
                                 <form action='' method='post'  enctype="multipart/form-data">
@@ -255,7 +255,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                                 <div class="form-group">
                                                     <label class="control-label">Select Category</label>
 													<select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
-                                                        <option>--Select Branch--</option>
+                                                        <option>--Select Hair Styles--</option>
                                                  <?php $ssql ="select * from branch";
 													$res=mysqli_query($db, $ssql); 
 													while($row=mysqli_fetch_array($res))  
@@ -283,7 +283,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                         </div>
                     </div>
 
-					<footer class="footer"> © 2023 - BurgerByte </footer>
+					<footer class="footer"> © 2023 - Snip N' Snap </footer>
 					
                 </div>
              
