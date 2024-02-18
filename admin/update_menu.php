@@ -283,7 +283,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                         </div>
                     </div>
 
-					<footer class="footer"> © 2023 - BurgerByte </footer>
+					<footer class="footer"> © 2023 - Snip N' Snap </footer>
 					
                 </div>
              

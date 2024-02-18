@@ -231,7 +231,7 @@ session_start();
              
             </div>
          
-            <footer class="footer"> © 2023 - BurgerByte </footer>
+            <footer class="footer"> © 2023 - Snip N' Snap </footer>
            
         </div>
        

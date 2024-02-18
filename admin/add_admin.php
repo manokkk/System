@@ -344,7 +344,7 @@ if(isset($_POST['submit']))
                             
                         </div>
                     </div>
-                    <footer class="footer"> © 2023 - BurgerByte </footer>
+                    <footer class="footer"> © 2023 - Snip N' Snap </footer>
                 </div>               
             </div>
         </div>    

@@ -250,7 +250,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
               
             </div>
           
-            <footer class="footer"> © 2023 - BurgerByte </footer>
+            <footer class="footer"> © 2023 - Snip N' Snap </footer>
         
         </div>
        
