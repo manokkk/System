@@ -203,7 +203,7 @@ if(isset($_POST['submit']))
                       <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
                             <ul aria-expanded="false" class="collapse">
 								<li><a href="all_menu.php">All Products</a></li>
-								<li><a href="add_menu.php">Add Product</a></li>
+								<li><a href="add_product.php">Add Product</a></li>
                               
                                 
                             </ul>
@@ -309,7 +309,7 @@ if(isset($_POST['submit']))
                                     </div>
                                     <div class="form-actions">
                                         <input type="submit" name="submit" class="btn btn-primary" value="Save"> 
-                                        <a href="add_menu.php" class="btn btn-inverse">Cancel</a>
+                                        <a href="add_product.php" class="btn btn-inverse">Cancel</a>
                                     </div>
                                 </form>
                             </div>
