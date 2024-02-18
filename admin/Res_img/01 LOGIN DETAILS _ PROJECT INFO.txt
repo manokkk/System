@@ -2,7 +2,6 @@
 
 **Database Name: onlinefoodphp**
 
-**Developed by Salman Ansari**
 
 **Recommended PHP Version 5.6, 7.4**
 
