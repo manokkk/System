@@ -97,7 +97,7 @@ session_start();
                                 </ul>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_branch.php">All Hair Styles</a></li>
+								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
@@ -143,7 +143,6 @@ session_start();
                                                 <th>Title</th>
                                                 <th>Quantity</th>
                                                 <th>Price</th>
-												<th>Address</th>
 												<th>Status</th>												
 												 <th>Reg-Date</th>
 												  <th>Action</th>
@@ -172,8 +171,7 @@ session_start();
 																					           <td>'.$rows['username'].'</td>
 																								<td>'.$rows['title'].'</td>
 																								<td>'.$rows['quantity'].'</td>
-																								<td>₱'.$rows['price'].'</td>
-																								<td>'.$rows['address'].'</td>';
+																								<td>₱'.$rows['price'].'</td>'
 																								?>
 																								<?php 
 																			$status=$rows['status'];

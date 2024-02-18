@@ -95,7 +95,7 @@ session_start();
                                 </ul>
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
-								<li><a href="all_branch.php">All Hair Styles</a></li>
+								<li><a href="all_hairstyle.php">All Hair Styles</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
