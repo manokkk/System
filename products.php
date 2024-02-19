@@ -34,7 +34,7 @@ include_once 'product-action.php';
                     <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
                        <ul class="nav navbar-nav">
                             <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
-                            <li class="nav-item"> <a class="nav-link active" href="hairstyle.php">Category<span class="sr-only"></span></a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="hairstyle.php">Hairstyle<span class="sr-only"></span></a> </li>
                             
 							<?php
 						if(empty($_SESSION["user_id"]))
@@ -81,7 +81,7 @@ include_once 'product-action.php';
                         <div class="row">
                             <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 profile-img">
                                 <div class="image-wrap">
-                                    <figure><?php echo '<img src="admin/Res_img/'.$rows['image'].'" alt="Hair Styleslogo">'; ?></figure>
+                                    <figure><?php echo '<img src="admin/Res_img/'.$rows['image'].'" alt="">'; ?></figure>
                                 </div>
                             </div>
 							
