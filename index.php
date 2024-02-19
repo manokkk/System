@@ -103,8 +103,8 @@ session_start();
         <section class="popular">
             <div class="container">
                 <div class="title text-xs-center m-b-30">
-                    <h2>Popular Hair Styles of the Month</h2>
-                    <p class="lead">Easiest way to choose hair styles according to your personal taste.</p>
+                    <h2>Popular Products of the Month</h2>
+                    <p class="lead">Easiest way to choose products according to your personal taste.</p>
                 </div>
                 <div class="row">
 						<?php 					

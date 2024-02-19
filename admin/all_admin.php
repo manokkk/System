@@ -32,7 +32,7 @@ session_start();
             <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
                         
-                        <span><img src="images/icn.png" alt="homepage" class="dark-logo" /></span>
+                        <span><img src="images/siteLogo.png" alt="homepage" class="dark-logo" /></span>
                     </a>
                 </div>
                 <div class="navbar-collapse">
@@ -97,12 +97,11 @@ session_start();
                         <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-archive f-s-20 color-warning"></i><span class="hide-menu">Hair Styles</span></a>
                             <ul aria-expanded="false" class="collapse">
 								<li><a href="all_hairstyle.php">All Hairstyles</a></li>
-								<li><a href="add_category.php">Add Category</a></li>
                                 <li><a href="add_hairstyle.php">Add Hairstyle</a></li>
                                 
                             </ul>
                         </li>
-                      <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Menu</span></a>
+                      <li> <a class="has-arrow  " href="#" aria-expanded="false"><i class="fa fa-cutlery" aria-hidden="true"></i><span class="hide-menu">Products</span></a>
                             <ul aria-expanded="false" class="collapse">
 								<li><a href="all_product.php">All Products</a></li>
 								<li><a href="add_product.php">Add Product</a></li>

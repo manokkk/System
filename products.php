@@ -75,7 +75,7 @@ include_once 'product-action.php';
 									     $rows=mysqli_fetch_array($ress);
 										  
 										  ?>
-            <section class="inner-page-hero bg-image" data-image-src="images/img/backgroundByte.jpg">
+            <section class="inner-page-hero bg-image" data-image-src="images/img/indexBG2.jpg">
                 <div class="profile">
                     <div class="container">
                         <div class="row">
