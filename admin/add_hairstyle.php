@@ -112,7 +112,7 @@ if(isset($_POST['submit']))
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" src="images/siteLogo.png">
     <title>Add Hairstyle</title>
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
@@ -133,7 +133,7 @@ if(isset($_POST['submit']))
             <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
                         
-                        <span><img src="images/icn.png" alt="homepage" class="dark-logo" /></span>
+                        <span><img src="images/siteLogo.png" alt="Snip n' Snap" class="dark-logo" /></span>
                     </a>
                 </div>
                 <div class="navbar-collapse">
